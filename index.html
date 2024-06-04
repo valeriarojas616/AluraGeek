@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="assets/static/css/index.css">
+    <link rel="stylesheet" href="assets/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Prata&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <img class="icon-logo">
-        <h1 class="title-logo">AluraGeek</h1>
+        <nav class="title-nav">
+            <img class="icon-logo" src="assets/public/img/icon-logo.png">
+            <h1 class="title-logo">AluraGeek</h1>
+        </nav>
     </header>
-
+    <main>
+        <div class="principal-content">
+            <section class="section-my-products">
+                <h2 class="title-products">Mis productos</h2>
+            </section>
+            <aside class="section-new-products">
+                <h2 class="title-products">Agregar producto</h2>
+                <form class="form-products">
+                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product">
+                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product">
+                    <input type="text" name="image" placeholder="Imagen..." class="input-datos image-product">
+                    <input class="button-submit" type="submit" value="Enviar">
+                </form>
+            </aside>
+        </div>
+    </main>
 </body>
 </html>
