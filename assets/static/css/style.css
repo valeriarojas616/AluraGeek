@@ -105,12 +105,20 @@ main{
     color: #f1f1f1;
 }
 .trash-button{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 27px;
     position: absolute;
     bottom: 25px;
     left: 210px;
     background-color: #8A6563;
+    background-image: url(/assets/public/img/icons8-basura-24.png);
+    background-position: center;
+    border: none;
+}
+.trash-button:active{
+    background-color:#734E4D;
+    box-shadow: inset 2px 2px 0px #572C45,
+                2px 2px 0px rgb(185, 178, 176, 1);
 }
 .section-new-products{
     width: 35%;
@@ -153,12 +161,19 @@ main{
 }
 .button-submit{
     color: #f1f1f1;
-    background-color: #35AC39;
-    
+    background-color: #35AC39;   
+}
+.button-submit:active{
+    background-color: #2a892d;
+    box-shadow: none;
 }
 .button-clean{
     color: #f1f1f1;
     background-color: #2D89B0;
+}
+.button-clean:active{
+    background-color: #246d8c;
+    box-shadow: none;
 }
 
 /*FOOTER*/
