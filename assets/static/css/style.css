@@ -29,7 +29,7 @@ main{
     padding: 1rem;
     background-color: #BCB7A7;
     width: 90%;
-    height: 100%;
+    height: 90%;
     border-radius: 50px;
     box-shadow: inset 3px 3px 0px  #F5F0D6, 
                 10px 15px 0px rgb(185, 178, 176, 1);
@@ -38,7 +38,7 @@ main{
 }
 .title-logo{
     font-family: "Orbitron", sans-serif;
-    font-size: 210%;
+    font-size: 200%;
     color: #572C45;
 }
 
@@ -48,13 +48,12 @@ main{
     width: 90%;
     justify-content: space-between;
     margin: 0.5rem auto;
-    gap: 5%;
+    gap: 4%;
 }
-.section-my-products, 
-.section-new-products{
+.section-my-products{
     width: 48%;
     padding: 1rem 2rem;
-    height: 400px;
+    min-height: 400px;
     background-color: #BCB7A7;
     border-radius: 50px;
     border: 3px solid#572C45;
@@ -66,6 +65,64 @@ main{
     color: #572C45;
     font-size: 170%;
 }
+.container-products{
+    display: flex;
+    width: 100%;
+    min-height: 310px;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container-product-ficha{
+    width: 270px;
+    position: relative;
+    background-color: #8A6563;
+    border-bottom-right-radius: 50px;
+    border: 3px solid#572C45;
+    box-shadow: inset 3px 3px 0px  #F5F0D6;
+}
+.container-product-img{
+    width: 80%;
+    height: 200px;
+    background-color: #f1f1f1;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 3px solid #572C45;
+
+}
+.img-product{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.product-name, 
+.product-price-ficha{
+    flex-flow: row wrap;
+    margin: 1rem;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+.trash-button{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 25px;
+    left: 210px;
+    background-color: #8A6563;
+}
+.section-new-products{
+    width: 35%;
+    padding: 1rem 2rem;
+    max-height: 430px;
+    background-color: #BCB7A7;
+    border-radius: 50px;
+    border: 3px solid#572C45;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+}
+
 .form-products{
     display: flex;
     flex-direction: column;
@@ -78,11 +135,84 @@ main{
     font-family: "Albert Sans", sans-serif;
     font-weight: 600;
 }
-.button-submit{
+.section-buttons{
+    display:flex;
     font-family: "Albert Sans", sans-serif;
-    font-size: 150%;
-    padding: 1rem;
-    background-color: #9A8C80;
+    justify-content: space-between;
+}
+.buttons{
+    width: 45%;
+    min-height: 70px;
+    border-radius: 50px;
+    font-family: "Albert Sans", sans-serif;
     font-weight: 600;
+    font-size: 150%;
+    box-shadow: inset 2px 2px 0px  #F5F0D6, 
+    5px 5px 0px rgb(130, 111, 105, 1);
+    border: 3px solid#572C45;
+}
+.button-submit{
+    color: #f1f1f1;
+    background-color: #35AC39;
+    
+}
+.button-clean{
+    color: #f1f1f1;
+    background-color: #2D89B0;
+}
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    border: 3px solid#572C45;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #BCB7A7;
+    width: 90%;
+    height: 90%;
+    border-radius: 50px;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+    box-sizing: border-box;
+}
+.info-footer{
+    margin: auto;
+    text-align: center;
+}
+.title-footer{
+    font-family: "Orbitron", sans-serif;
+    font-size: 200%;
+    color: #572C45;
+}
+.developer{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #572C45;
+    font-size: 150%;
+}
+.alura-date{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #572C45;
+}
+@media (max-width: 768px) {
+    .principal-content{
+        flex-direction: column;
+        width: 100%;
+    }    
+    .main-content{
+        width: 70%;
+        margin: auto;
+    }
+    .section-new-products{
+        order: 0;
+        margin-bottom: 2rem;
+    }
+    .section-my-products{
+        order: 1;
+    }
+}
+@media (max-width: 425px) {
+    
 }
 

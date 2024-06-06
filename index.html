@@ -18,19 +18,64 @@
     </header>
     <main>
         <div class="principal-content">
-            <section class="section-my-products">
+            <section class="main-content section-my-products">
                 <h2 class="title-products">Mis productos</h2>
+                <div class="container-products">
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+
+                </div>
             </section>
-            <aside class="section-new-products">
+            <aside class="main-content section-new-products">
                 <h2 class="title-products">Agregar producto</h2>
-                <form class="form-products">
+                <form class="form-products" enctype="multipart/form-data" accept="jpg, png">
                     <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product">
                     <input type="text" name="price" placeholder="Precio..." class="input-datos price-product">
-                    <input type="text" name="image" placeholder="Imagen..." class="input-datos image-product">
-                    <input class="button-submit" type="submit" value="Enviar">
+                    <input type="file" accept="image" name="image" class="input-datos image-product">
+                    <div class="section-buttons">
+                        <input class="buttons button-submit" type="submit" value="Enviar">
+                        <input class="buttons button-clean" type="button" value="Limpiar">
+                    </div>
                 </form>
             </aside>
         </div>
     </main>
+    <footer class="footer">
+            <div class="info-footer">
+                <h1 class="title-footer">AluraGeek</h1>
+                <p class="developer">Desarrollado por Valeria Rojas</p>
+                <p class="alura-date">Alura Latam - 2024</p>
+            </div>
+    </footer>
 </body>
 </html>

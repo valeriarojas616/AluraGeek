@@ -1,0 +1,1 @@
+const trashButton = document.querySelectorAll('.trash-button');
