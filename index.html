@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Prata&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="title-nav">
+            <img class="icon-logo" src="assets/public/img/icon-logo.png">
+            <h1 class="title-logo">AluraGeek</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="principal-content">
+            <section class="main-content section-my-products">
+                <h2 class="title-products">Mis productos</h2>
+                <div class="container-products">
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button class="trash-button"></button>
+                    </div>
+                    <div class="container-product-ficha"> 
+                        <div class="container-product-img">
+                            <img class="img-product" src="assets/public/img/controNintendo.png" alt="Control nintendo">
+                        </div>
+                        <h3 class="product-name">Contro Nintendo</h3>
+                        <p class="product-price-ficha">600</p>
+                        <button  class="trash-button"></button>
+                    </div>
+
+                </div>
+            </section>
+            <aside class="main-content section-new-products">
+                <h2 class="title-products">Agregar producto</h2>
+                <form class="form-products" enctype="multipart/form-data" accept="jpg, png">
+                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product">
+                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product">
+                    <input type="file" accept="image" name="image" class="input-datos image-product">
+                    <div class="section-buttons">
+                        <input class="buttons button-submit" type="submit" value="Enviar">
+                        <input class="buttons button-clean" type="button" value="Limpiar">
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+            <div class="info-footer">
+                <h1 class="title-footer">AluraGeek</h1>
+                <p class="developer">Desarrollado por Valeria Rojas</p>
+                <p class="alura-date">Alura Latam - 2024</p>
+            </div>
+    </footer>
+    <!--Ventana Emergente
+    <div class="alert-window" id="confirm-trash">
+        <div class="alert-window-content">
+            <p>¿Deseas eliminar este producto?</p>
+            <button class="alert-window-button" id="confirm-yes">Sí</button>
+            <button class="alert-window-button" id="confirm-no">No</button>
+        </div>-->
+    </div>
+    <script src="assets/static/js/script.js"></script>
+</body>
+</html>

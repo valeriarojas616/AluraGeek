@@ -1,0 +1,273 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: #E1DED5;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    height: 100%;
+}
+.title-nav{
+    display: flex;
+    border: 3px solid#572C45;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #BCB7A7;
+    width: 90%;
+    height: 90%;
+    border-radius: 50px;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+    box-sizing: border-box;
+
+}
+.title-logo{
+    font-family: "Orbitron", sans-serif;
+    font-size: 200%;
+    color: #572C45;
+}
+
+/* PRINCIPAL*/
+.principal-content{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0.5rem auto;
+    gap: 4%;
+}
+.section-my-products{
+    width: 48%;
+    padding: 1rem 2rem;
+    min-height: 400px;
+    background-color: #BCB7A7;
+    border-radius: 50px;
+    border: 3px solid#572C45;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+}
+.title-products{
+    font-family: "Orbitron", sans-serif;
+    color: #572C45;
+    font-size: 170%;
+}
+.container-products{
+    display: flex;
+    width: 100%;
+    min-height: 310px;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.container-product-ficha{
+    width: 270px;
+    position: relative;
+    background-color: #8A6563;
+    border-bottom-right-radius: 50px;
+    border: 3px solid#572C45;
+    box-shadow: inset 3px 3px 0px  #F5F0D6;
+}
+.container-product-img{
+    width: 80%;
+    height: 200px;
+    background-color: #f1f1f1;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: 3px solid #572C45;
+
+}
+.img-product{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.product-name, 
+.product-price-ficha{
+    flex-flow: row wrap;
+    margin: 1rem;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+.trash-button{
+    width: 30px;
+    height: 27px;
+    position: absolute;
+    bottom: 25px;
+    left: 210px;
+    background-color: #8A6563;
+    background-image: url(/assets/public/img/icons8-basura-24.png);
+    background-position: center;
+    border: none;
+}
+.trash-button:active{
+    background-color:#734E4D;
+    box-shadow: inset 2px 2px 0px #572C45,
+                2px 2px 0px rgb(185, 178, 176, 1);
+}
+.section-new-products{
+    width: 35%;
+    padding: 1rem 2rem;
+    max-height: 430px;
+    background-color: #BCB7A7;
+    border-radius: 50px;
+    border: 3px solid#572C45;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+}
+
+.form-products{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-datos{
+    padding: 1rem;
+    background-color: #f1f1f1 ;
+    font-size: 150%;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+}
+.section-buttons{
+    display:flex;
+    font-family: "Albert Sans", sans-serif;
+    justify-content: space-between;
+}
+.buttons{
+    width: 45%;
+    min-height: 70px;
+    border-radius: 50px;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+    box-shadow: inset 2px 2px 0px  #F5F0D6, 
+    5px 5px 0px rgb(130, 111, 105, 1);
+    border: 3px solid#572C45;
+}
+.button-submit{
+    color: #f1f1f1;
+    background-color: #35AC39;   
+}
+.button-submit:active{
+    background-color: #2a892d;
+    box-shadow: none;
+}
+.button-clean{
+    color: #f1f1f1;
+    background-color: #2D89B0;
+}
+.button-clean:active{
+    background-color: #246d8c;
+    box-shadow: none;
+}
+
+/*FOOTER*/
+.footer{
+    display: flex;
+    border: 3px solid#572C45;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #BCB7A7;
+    width: 90%;
+    height: 90%;
+    border-radius: 50px;
+    box-shadow: inset 3px 3px 0px  #F5F0D6, 
+                10px 15px 0px rgb(185, 178, 176, 1);
+    box-sizing: border-box;
+}
+.info-footer{
+    margin: auto;
+    text-align: center;
+}
+.title-footer{
+    font-family: "Orbitron", sans-serif;
+    font-size: 200%;
+    color: #572C45;
+}
+.developer{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #572C45;
+    font-size: 150%;
+}
+.alura-date{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 600;
+    color: #572C45;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px; /* Maximum width */
+    text-align: center; /* Center the text */
+}
+
+.modal-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-button#confirm-no {
+    background-color: #f44336; /* Red */
+}
+
+.modal-button:hover {
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    .principal-content{
+        flex-direction: column;
+        width: 100%;
+    }    
+    .main-content{
+        width: 70%;
+        margin: auto;
+    }
+    .section-new-products{
+        order: 0;
+        margin-bottom: 2rem;
+    }
+    .section-my-products{
+        order: 1;
+    }
+}
+@media (max-width: 425px) {
+    
+}
+
