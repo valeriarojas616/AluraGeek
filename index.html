@@ -28,10 +28,10 @@
             </section>
             <aside class="main-content section-new-products">
                 <h2 class="title-products">Agregar producto</h2>
-                <form class="form-products" enctype="multipart/form-data" accept="jpg, png">
-                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product" required>
-                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product" required>
-                    <input type="text" placeholder="Enlace a imagen..." class="input-datos image-product" required>
+                <form class="form-products" enctype="multipart/form-data" accept="jpg, png" data-formulario>
+                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product" required data-nombre>
+                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product" required data-precio>
+                    <input type="text" placeholder="Enlace a imagen..." class="input-datos image-product" required data-imagen>
                     <div class="section-buttons">
                         <input class="buttons button-submit" type="submit" value="Enviar">
                         <input class="buttons button-clean" type="reset" value="Limpiar">
@@ -48,7 +48,7 @@
                 <p class="alura-date">Alura Latam - 2024</p>
             </div>
     </footer>
-    
+    <script src="assets/static/js/crearProducto.js" type="module"></script>
     <script src="assets/static/js/mostrarProductos.js" type="module"></script>
 </body>
 </html>

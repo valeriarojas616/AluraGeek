@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             // Iterar sobre cada botón y añadir un event listener para el click
             trashButtons.forEach(button => {
                 button.addEventListener('click', () => {
+
+                    console.log('boton basura');
                     //tomar el elemento donde se añadira nuevo contenido
                     const documentoPrincipal = document.querySelector('main');
 
