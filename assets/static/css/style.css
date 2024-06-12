@@ -216,7 +216,7 @@ main{
     display: flex;
     background-color: #BCB7A7;
     width: 30%;
-    min-height: 200px;
+    height: auto;
     position: fixed;
     bottom:auto;
     left: 35%;
@@ -230,6 +230,7 @@ main{
     font-size: 165%;
     font-weight: 600;
     text-align: center;
+    margin: 1.5rem;
 }
 .alert-window-button{
     width: 45%;
@@ -241,6 +242,7 @@ main{
     box-shadow: inset 2px 2px 0px  #F5F0D6, 
     5px 5px 0px rgb(130, 111, 105, 1);
     border: 3px solid#572C45;
+    margin-bottom: 1.5rem;
 }
 .section-buttons-alert{
     display: flex;
@@ -277,6 +279,11 @@ main{
     }
     .section-my-products{
         order: 1;
+    }
+    .alert-window{
+        width: 50%; 
+        bottom:auto;
+        left: 25%;    
     }
 }
 @media (max-width: 425px) {

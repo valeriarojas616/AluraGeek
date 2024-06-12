@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "PlayStation 5",
+      "precio": "8001.00",
+      "imagen": "https://cdn1.coppel.com/images/catalog/pm/2441313-1.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Control Nintendo 64",
+      "precio": "379.00",
+      "imagen": "https://virtualzone.mx/wp-content/uploads/2022/04/Control_N64_Alambrico_Azul_1_Virtual_Zone-1.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Zelda: Tears of the kingdom",
+      "precio": "928.87",
+      "imagen": "https://ishopmx.vtexassets.com/arquivos/ids/275408-800-auto?v=638176866135600000&width=800&height=auto&aspect=true"
+    },
+    {
+      "id": "4",
+      "nombre": "Horizon: zero dawn",
+      "precio": "449.00",
+      "imagen": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/0a66e27f-d71c-400b-a0c3-202c1edbbe0d.e4f6783bc92289c0411e641540a6d527.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+    }
+  ]
+}
