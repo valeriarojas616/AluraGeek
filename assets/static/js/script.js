@@ -7,23 +7,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const contenedorProductos = document.querySelector('.container-products');
     
-    //conexion de api simulada
+    //conexion de api simulada/ arrow funcion asincrona
     const nameRequest = async()=>{
         try{
+            //variable agregada dentro de la funcion/ llamada a la API
             const response = await fetch("http://localhost:3000/productos");
+            //variable en espera de la API transformada a json
             const _json = await response.json();
             return _json;
         }catch(error){
             throw 'Error';
         }
     };
-    nameRequest()
+    //lamada a la arrow funcion junto con .then
+    nameRequest() 
+    //dentro de la misma llamada para cada elemento json
     .then(_json => {
         _json.forEach(element =>{
+            //variables con la informacion del objeto json de ser necesario podemos disponer de un id ya que se encuentra en la API
             let nombre = element.nombre;
             let precio = element.precio;
             let img = element.imagen;
 
+            //creando etiquetas div y su nombre de clase / almacenandolas en variables
             let _divFicha = document.createElement('div');
             _divFicha.classList.add('container-product-ficha');
 
@@ -42,26 +48,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
             let _trashButton = document.createElement('button');
             _trashButton.classList.add('trash-button');
 
+            //Tomando la variable que almacena el div que contiene la seccion de productos le añadimos la variable de la etiqueta ficha
+            /* Ejemplo visual
+            
+            <contenedorProducto>
+
+            <divFicha>  </divFicha>
+            
+            </contenedorProducto>
+            
+            */
             contenedorProductos.appendChild(_divFicha);
+            //introducimos hijos a las etiquetas para dar la estructura correcta al html
+
+            /* 
+            <divFicha>  
+
+            <divContainerImg>   </divContainerImg>
+
+            </divFicha> */
             _divFicha.appendChild(_divContainerImg);
             _divContainerImg.appendChild(_img);
+            //Asi sucesivamente
             _divFicha.appendChild(_h3TitleProduct);
             _divFicha.appendChild(_pPrice);
             _divFicha.appendChild(_trashButton);
 
-            _img.setAttribute('src', img); 
+            //la variable imagen se actualiza con informacion en su etiqueta cambiando el valor de src por la imagen que viene de la API
+            _img.setAttribute('src', img);
+            //igual que el anterior pero actualizamos la info alt 
             _img.setAttribute('alt', nombre); 
+            //agregamos contenido a la etiqueta con textContent y le asignamos el valor de la informacio de la api que corresponde al nombre
             _h3TitleProduct.textContent = nombre;
-            _pPrice.textContent = precio;
+            //añadimos strings y la variable precio al text content de la etiqueta de precio
+            _pPrice.textContent = `$ ${precio}`;
     
-        })
-        //capturar boton trash
+        })//se cierra el forEach
+        //Dento del mismo then colocamos la funcion del trashButton
+
+        //capturar botones trash
         const trashButtons = document.querySelectorAll('.trash-button');
+        
         function buttonTrashFunction(){
-            // Iterar sobre cada botón y añadir un event listener para el clic
+            // Iterar sobre cada botón y añadir un event listener para el click
             trashButtons.forEach(button => {
                 button.addEventListener('click', () => {
-                    console.log('se oprimio')
                     //tomar el elemento donde se añadira nuevo contenido
                     const documentoPrincipal = document.querySelector('main');
 
@@ -99,14 +130,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
         /*para llamar al objeto e imprimirlo
                 console.log(_json[0].nombre);
         */
-    })
-    .catch(error => console.log(error));
+    })//se cierra el then, pero sigue dentro de la llamada a la funcion  nameRequest()
+    .catch(error => console.log(error));//este ';' finalmente cierra el llamado a la funcion  nameRequest()
     
-    function cleanForm(){
+    //FUNCION PARA LIMPIAR FORMULARIO
+    /*function cleanForm(){
         buttonClean.addEventListener('click', ()=>{
             formNewProducts.reset();
         });
     };
-    cleanForm();
+    cleanForm();*/
 });
 

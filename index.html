@@ -28,12 +28,12 @@
             <aside class="main-content section-new-products">
                 <h2 class="title-products">Agregar producto</h2>
                 <form class="form-products" enctype="multipart/form-data" accept="jpg, png">
-                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product">
-                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product">
-                    <input type="file" accept="image" name="image" class="input-datos image-product">
+                    <input type="text" name="name" placeholder="Nombre..." class="input-datos name-product" required>
+                    <input type="text" name="price" placeholder="Precio..." class="input-datos price-product" required>
+                    <input type="text" placeholder="Enlace a imagen..." class="input-datos image-product" required>
                     <div class="section-buttons">
                         <input class="buttons button-submit" type="submit" value="Enviar">
-                        <input class="buttons button-clean" type="button" value="Limpiar">
+                        <input class="buttons button-clean" type="reset" value="Limpiar">
                     </div>
                 </form>
             </aside>
@@ -50,5 +50,6 @@
     </footer>
     
     <script src="assets/static/js/script.js"></script>
+    <script src="assets/static/js/form.js" type="module"></script>
 </body>
 </html>
